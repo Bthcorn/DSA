@@ -1,14 +1,14 @@
 package solutions.pack1;
 
-public class Dog {
+public class Dog_660968 {
   public Breed breed;
   private int weight;
 
-  Dog() {
+  Dog_660968() {
     this.weight = 0;
   }
 
-  public Dog(Breed breed, int weight) {
+  public Dog_660968(Breed breed, int weight) {
     this.weight = weight;
     this.breed = breed;
     // System.out.print("" + breed + " " + weight + " ");
@@ -44,7 +44,7 @@ public class Dog {
       return false;
     if (getClass() != obj.getClass())
       return false;
-    Dog other = (Dog) obj;
+    Dog_660968 other = (Dog_660968) obj;
     if (breed != other.breed)
       return false;
     if (weight != other.weight)

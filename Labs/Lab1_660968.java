@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 
 import solutions.pack1.*;
 
-public class Lab1_SomeExercises {
+public class Lab1_660968 {
   public static void task1() {
     System.out.println("--task1---");
     ArrayList<String> lis1a = new ArrayList<>(Arrays.asList("Lily", "Daisy"));
@@ -74,10 +74,10 @@ public class Lab1_SomeExercises {
       System.out.print(ele + " ");
     }
     System.out.println();
-    ArrayList<Dog> lis4b = new ArrayList<>(Arrays.asList(new Dog(Breed.pomeranian, 1200), new Dog(Breed.beagle, 2300),
-        new Dog(Breed.jack, 1440), new Dog(Breed.beagle, 2300)));
-    HashSet<Dog> dogs = new HashSet<>(lis4b);
-    for (Dog ele : dogs) {
+    ArrayList<Dog_660968> lis4b = new ArrayList<>(Arrays.asList(new Dog_660968(Breed.pomeranian, 1200), new Dog_660968(Breed.beagle, 2300),
+        new Dog_660968(Breed.jack, 1440), new Dog_660968(Breed.beagle, 2300)));
+    HashSet<Dog_660968> dogs = new HashSet<>(lis4b);
+    for (Dog_660968 ele : dogs) {
       System.out.print(ele + " ");
     }
     System.out.println();
@@ -85,11 +85,11 @@ public class Lab1_SomeExercises {
 
   static void task5() { // dog breed frequency
     System.out.println("--task5---");
-    ArrayList<Dog> lis5 = new ArrayList<>(Arrays.asList(new Dog(Breed.pomeranian, 1200), new Dog(Breed.beagle, 2300),
-        new Dog(Breed.jack, 1440), new Dog(Breed.beagle, 2300)));
+    ArrayList<Dog_660968> lis5 = new ArrayList<>(Arrays.asList(new Dog_660968(Breed.pomeranian, 1200), new Dog_660968(Breed.beagle, 2300),
+        new Dog_660968(Breed.jack, 1440), new Dog_660968(Breed.beagle, 2300)));
     HashMap<Breed, Integer> map = new HashMap<>();
 
-    for (Dog ele : lis5) {
+    for (Dog_660968 ele : lis5) {
       Breed breed = ele.breed;
       if (map.containsKey(breed)) {
         map.put(breed, map.get(breed) + 1);
@@ -106,12 +106,12 @@ public class Lab1_SomeExercises {
   static void task6() { // number of unique elements
     System.out.println("--task6---");
     System.out.print("The number of unique element is ");
-    ArrayList<Dog> lis6 = new ArrayList<>(Arrays.asList(new Dog(Breed.pomeranian, 1200), new Dog(Breed.beagle, 2300),
-        new Dog(Breed.jack, 1440), new Dog(Breed.beagle, 2300)));
+    ArrayList<Dog_660968> lis6 = new ArrayList<>(Arrays.asList(new Dog_660968(Breed.pomeranian, 1200), new Dog_660968(Breed.beagle, 2300),
+        new Dog_660968(Breed.jack, 1440), new Dog_660968(Breed.beagle, 2300)));
     /* your code */
     HashMap<Breed, Integer> map = new HashMap<>();
 
-    for (Dog ele : lis6) {
+    for (Dog_660968 ele : lis6) {
       Breed breed = ele.breed;
       if (map.containsKey(breed)) {
         // if (map.get(breed) == 1) {}
