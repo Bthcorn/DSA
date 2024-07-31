@@ -26,14 +26,19 @@ public class MyArray extends MyArrayBasic {
       expand();
       // System.out.println("Expanded to " + MAX_SIZE);
     }
-    super.add(d);
+    data[size++] = d;
   }
 
   public void insert(int d, int index) {
     if (isFull()) {
       expand();
     }
-    super.insert(d, index);
+    
+    for (int i = size; i > index; i--) {
+      data[i] = data[i - 1];
+    }
+    data[index] = d;
+    size++;
   }
 
   public void delete(int index) {
